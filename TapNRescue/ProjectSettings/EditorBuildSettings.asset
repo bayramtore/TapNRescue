@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TapNRescue/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/TapNRescue/Scenes/Levels/Level 1.unity
+    guid: 963808ac148fb42789b31d38041f3707
   m_configObjects: {}
