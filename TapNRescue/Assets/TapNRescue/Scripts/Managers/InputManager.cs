@@ -6,7 +6,7 @@ using TMPro;
 
 public class InputManager : Singleton<InputManager>
 {
-    public LayerMask ballLayerMask;
+    public LayerMask animalLayerMask;
     public bool isDisplayOn = false;
     public bool canClick = true;
     public Animal tappedAnimal;
@@ -77,7 +77,7 @@ public class InputManager : Singleton<InputManager>
             return;
 
         Ray rayTouch = Camera.main.ScreenPointToRay(screenPos);
-        if (Physics.Raycast(rayTouch, out var hit, 100, layerMask: ballLayerMask))
+        if (Physics.Raycast(rayTouch, out var hit, 100, layerMask: animalLayerMask))
         {
             if (hit.collider.TryGetComponent<Animal>(out var animal))
             {
